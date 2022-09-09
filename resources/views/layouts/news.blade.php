@@ -11,7 +11,7 @@
         <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
 
             <div class="w-full bg-white shadow flex flex-col my-4 p-6">
-                <form>
+                <form action="{{ route('posts.index') }}">
                     <div class="flex">
                         <input type="text" placeholder="Поиск..."
                             @if (request()->search) value="{{ request()->search }}" @endif name="search"
